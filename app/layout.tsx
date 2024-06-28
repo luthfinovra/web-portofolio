@@ -1,9 +1,12 @@
 import type { Metadata } from "next";
-import { Space_Grotesk } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 
-const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"] });
+
+import { IconContext } from "react-icons";
+import { FaFolder } from "react-icons/fa";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,15 +20,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={spaceGrotesk.className}>
-      <ThemeProvider
-            attribute="class"
-            defaultTheme="dark"
-            enableSystem
-            disableTransitionOnChange
-            >
-            {children}
-          </ThemeProvider>
+      <body className={inter.className}>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
