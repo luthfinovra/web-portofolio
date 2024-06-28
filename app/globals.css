@@ -77,5 +77,5 @@
 }
 
 .gradient-text {
-  @apply bg-clip-text text-transparent bg-gradient-to-r from-violet-500 to-green-300;
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-violet-400 to-green-300;
 }

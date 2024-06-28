@@ -23,7 +23,7 @@ export default function HeroSection() {
     return (
         <div
             className="h-full flex flex-col justify-center
-        px-12 2xl:px-72 xl:px-56 lg:px-32  md:px-28 sm:px-8 py-16 sm:py-28 "
+        px-12 2xl:px-72 xl:px-56 lg:px-32  md:px-28 sm:px-8 py-16 sm:py-28 gap-2"
         >
             <motion.span
                 initial={{ y: 10, opacity: 0 }}
@@ -33,7 +33,7 @@ export default function HeroSection() {
                     duration: 0.5,
                     ease: "easeInOut",
                 }}
-                className="text-violet-400 font-mono font-bold"
+                className="text-slate-50 font-mono font-bold"
             >
                 Hello, I am
             </motion.span>
@@ -45,9 +45,9 @@ export default function HeroSection() {
                     duration: 0.5,
                     ease: "easeInOut",
                 }}
-                className="text-slate-50 text-opacity-75 font-bold text-3xl lg:text-7xl sm:text-5xl md:text-6xl mt-4"
+                className="text-slate-50 font-bold text-3xl lg:text-7xl sm:text-5xl md:text-6xl mt-4"
             >
-                Luthfi Novra.
+                <span className='gradient-text'>Luthfi Novra</span>
             </motion.h1>
             <motion.h2
                 initial={{ y: 10, opacity: 0 }}
@@ -57,10 +57,9 @@ export default function HeroSection() {
                     duration: 0.6,
                     ease: "easeInOut",
                 }}
-                className="text-violet-200 text-opacity-50 font-bold text-3xl lg:text-7xl sm:text-5xl md:text-6xl mt-4"
+                className="text-slate-50 font-bold text-3xl lg:text-7xl sm:text-5xl md:text-6xl -mt-2"
             >
-                Turn Your Imagination into Reality
-                {/* <span className='text-violet-300'><FlipWords words={words} /></span> */}
+                Turning Imagination<br />into<span><FlipWords words={words} /></span>
             </motion.h2>
 
             <motion.h3
@@ -71,7 +70,7 @@ export default function HeroSection() {
                     duration: 0.8,
                     ease: "easeInOut",
                 }}
-                className="text-gray-300 text-sm md:text-lg sm:text-md mt-10 tracking-wider w-5/6"
+                className="text-gray-300 text-sm md:text-lg sm:text-md mt-14 tracking-wider w-4/6"
             >
                 I&apos;m a final year Informatics student at Telkom University with a strong interest in
                 Back-End Development and Machine Learning.
