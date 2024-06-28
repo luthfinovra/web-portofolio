@@ -83,14 +83,14 @@ const config = {
             backgroundPosition: "50% 50%, 50% 50%",
           },
           to: {
-            backgroundPosition: "350% 50%, 350% 50%",
+            backgroundPosition: "250% 50%, 250% 50%",
           },
         },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        aurora: "aurora 60s linear infinite",
+        aurora: "aurora 120s linear infinite",
       },
     },
   },

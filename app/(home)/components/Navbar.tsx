@@ -1,18 +1,59 @@
-import React from 'react'
+import React, { useState } from 'react';
 
-export default function Navbar() {
+type Section = "hero" | "projects" | "experiences";
+
+type NavbarProps = {
+    setActiveSection: (section: Section) => void;
+    activeSection: Section;
+};
+
+export default function Navbar({ setActiveSection, activeSection }: NavbarProps) {
     return (
-        <nav className="absolute top-0 left-0 right-0 z-50 px-5 text-white">
-            <div className="x-12 2xl:px-72 xl:px-56 lg:px-32  md:px-28 sm:px-8">
+        <nav className="absolute top-0 left-0 right-0 z-50 text-white">
+            <div className="px-12 2xl:px-72 xl:px-56 lg:px-32">
                 <div className="flex items-center justify-between h-16">
-                    <span className="text-2xl dark:text-white font-semibold">nvr_luthfi</span>
+                    {/* <span className="text-2xl dark:text-white font-semibold">nvr_luthfi</span> */}
                     <div className="flex space-x-4 font-bold dark:text-white">
-                        <a href="#" className='dark:hover:text-violet-300'>Home</a>
-                        <a href="#" className=' dark:hover:text-violet-300'>Projects</a>
-                        <a href="#" className=' dark:hover:text-violet-300'>Contact</a>
+                        <NavLink
+                            onClick={() => setActiveSection("hero")}
+                            active={activeSection === "hero"}
+                        >
+                            Home
+                        </NavLink>
+                        <NavLink
+                            onClick={() => setActiveSection("projects")}
+                            active={activeSection === "projects"}
+                        >
+                            Projects
+                        </NavLink>
+                        <NavLink
+                            onClick={() => setActiveSection("experiences")}
+                            active={activeSection === "experiences"}
+                        >
+                            Experiences
+                        </NavLink>
                     </div>
                 </div>
             </div>
         </nav>
-    )
+    );
 }
+
+type NavLinkProps = {
+    onClick: () => void;
+    active: boolean;
+    children: React.ReactNode; // Ensure children prop is defined correctly
+};
+
+const NavLink: React.FC<NavLinkProps> = ({ onClick, active, children }) => (
+    <a
+        href="#"
+        className={`dark:hover:text-green-300 ${active ? "gradient-text" : ""}`}
+        onClick={(e) => {
+            e.preventDefault();
+            onClick();
+        }}
+    >
+        {children}
+    </a>
+);

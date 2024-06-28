@@ -2,14 +2,20 @@
 
 import { motion } from "framer-motion";
 import { AuroraBackground } from "../../components/ui/aurora-background";
-import React from 'react'
-import Navbar from './components/Navbar'
-import HeroSection from './components/HeroSection'
+import React, { useState } from 'react';
+import Navbar from './components/Navbar';
+import HeroSection from './components/HeroSection';
+import ExperienceSection from "./components/ExperienceSection";
+import ProjectSection from "./components/ProjectSection";
 
-export default function page() {
+type Section = "hero" | "projects" | "experiences";
+
+export default function Page() {
+  const [activeSection, setActiveSection] = useState<Section>("hero");
+
   return (
     <>
-      <Navbar />
+      <Navbar setActiveSection={setActiveSection} activeSection={activeSection} />
       <AuroraBackground>
         <motion.div
           initial={{ opacity: 0.0, y: 40 }}
@@ -21,7 +27,9 @@ export default function page() {
           }}
           className="relative flex flex-col gap-4 items-center justify-center px-4"
         >
-          <HeroSection />
+          {activeSection === "hero" && <HeroSection />}
+          {activeSection === "projects" && <ProjectSection />}
+          {activeSection === "experiences" && <ExperienceSection />}
         </motion.div>
       </AuroraBackground>
     </>
