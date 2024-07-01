@@ -22,7 +22,7 @@ export default function HeroSection() {
     ]
     return (
         <div
-            className="h-full flex flex-col justify-center
+            className="relative z-20 h-screen flex flex-col justify-center
         px-12 2xl:px-72 xl:px-56 lg:px-32  md:px-28 sm:px-8 py-16 sm:py-28 gap-2"
         >
             <motion.span
@@ -99,7 +99,7 @@ export default function HeroSection() {
                                 key={index}
                                 aria-label={social.label}
                                 target="_blank">
-                                <Icon className='text-slate-300 hover:text-green-300 size-5 md:size-8 transition-all' />
+                                <Icon className='text-slate-300 hover:text-green-300 z-30 size-5 md:size-8 transition-all' />
                             </Link>);
                     })}
                     <Link

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-type Section = "hero" | "projects" | "experiences";
+type Section = "hero" | "projects" | "experiences" | "about";
 
 type NavbarProps = {
     setActiveSection: (section: Section) => void;
@@ -31,6 +31,12 @@ export default function Navbar({ setActiveSection, activeSection }: NavbarProps)
                             active={activeSection === "experiences"}
                         >
                             Experiences
+                        </NavLink>
+                        <NavLink
+                            onClick={() => setActiveSection("about")}
+                            active={activeSection === "about"}
+                        >
+                            About
                         </NavLink>
                     </div>
                 </div>
