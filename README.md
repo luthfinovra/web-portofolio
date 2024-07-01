@@ -1,7 +1,7 @@
 # Personal Web Portofolio
 This is a Next.js project for my personal website, which is bootstrapped with create-next-app. This website is deployed on [Vercel](https://vercel.com/), you can visit the live site at [nvr-luthfi.vercel.app](https://nvr-luthfi.vercel.app/).
 
-[Main Page](/public/projects/web-portofolio.webp)
+![Main Page](/public/projects/web-portofolio.webp)
 
 ## About the Project
 This website showcases my portfolio, including my projects, experiences, and contact information. The main technologies and libraries used in this project are:
