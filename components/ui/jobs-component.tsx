@@ -20,7 +20,7 @@ const jobs: Job[] = [
     jobTime: "Sep 2021 - Present",
     jobTitle: "Bachelor Degree in Informatics",
     jobDescription:
-      "As an undergraduate student in the School of Informatics at Telkom University, I have developed a strong foundation in various programming languages and software development methodologies. My coursework has equipped me with skills in areas such as database design, web development, and machine learning. Maintaining a high GPA of 3.99/4.0, I have demonstrated both my academic dedication and technical proficiency.",
+      "As an undergraduate student in the School of Informatics at Telkom University, I have developed a strong foundation in various programming languages and software development methodologies. My coursework has equipped me with skills in areas such as database design, web development, and machine learning.",
     responsibilities: [],
   },
   {
@@ -55,8 +55,8 @@ const jobs: Job[] = [
 export default function JobComponent() {
   const [selectedJob, setSelectedJob] = useState(0);
   return (
-    <section className="px-4 2xl:px-4 xl:px-6 lg:px-8 md:px-4 sm:px-2 py-8 sm:py-4 gap-2">
-      <div className="container grid max-w-5xl grid-cols-1 gap-8 md:grid-cols-2 lg:gap-12">
+    <section className="2xl:px-4 xl:px-6 py-6 sm:py-4 gap-2">
+      <div className="container grid max-w-7xl grid-cols-1 gap-8 md:grid-cols-2 lg:gap-12">
         <div className="space-y-2">
           {jobs.map((job, index) => (
             <div key={index} className="grid gap-2">
@@ -69,7 +69,7 @@ export default function JobComponent() {
             </div>
           ))}
         </div>
-        <div className="space-y-8 hidden md:block">
+        <div className="space-y-8 hidden md:block bg-muted/40 h-full rounded-md p-4">
           {selectedJob >= 0 && selectedJob < jobs.length && (
             <JobDetails job={jobs[selectedJob]} />
           )}
@@ -88,7 +88,7 @@ type JobCardProps = {
 function JobCard({ job, isSelected, onClick }: JobCardProps) {
   return (
     <div
-      className={`flex flex-col items-start gap-4 cursor-pointer rounded-md py-3 transition-colors hover:bg-muted/50 ${isSelected ? "bg-muted" : ""
+      className={`flex flex-col items-start gap-4 cursor-pointer rounded-md py-3 transition-colors hover:bg-muted ${isSelected ? "bg-muted/50" : ""
         }`}
       onClick={onClick}
     >
@@ -97,7 +97,7 @@ function JobCard({ job, isSelected, onClick }: JobCardProps) {
           <Image src={job.logo} alt="logo" width={20} height={20} className="size-8" />
         </Avatar>
         <div className="space-y-1">
-          <h3 className="text-lg font-semibold">{job.companyName}</h3>
+          <h3 className="text-md lg:text-lg font-semibold">{job.companyName}</h3>
           <p className="text-sm text-muted-foreground">{job.jobTime}</p>
         </div>
       </div>
@@ -117,8 +117,8 @@ type JobDetailsProps = {
 function JobDetails({ job }: JobDetailsProps) {
   return (
     <div className="grid gap-4 px-4">
-      <h3 className="text-xl font-bold">{job.jobTitle}</h3>
-      <div className="prose text-muted-foreground text-gray-300">
+      <h3 className="text-md lg:text-lg font-bold">{job.jobTitle}</h3>
+      <div className="text-muted-foreground text-gray-300 text-md lg:text-lg">
         <p>{job.jobDescription}</p>
         {job.responsibilities.length > 0 && (
           <ul>

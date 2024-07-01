@@ -90,3 +90,13 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+@media (max-height: 768px) {
+  .h-sm\:justify-start {
+    justify-content: flex-start;
+  }
+
+  .h-sm\:pb-16 {
+    padding-bottom: 4rem;
+  }
+}

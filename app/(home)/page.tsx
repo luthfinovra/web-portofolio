@@ -7,6 +7,7 @@ import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
 import ExperienceSection from "./components/ExperienceSection";
 import ProjectSection from "./components/ProjectSection";
+import AboutSection from "./components/AboutSection";
 
 type Section = "hero" | "projects" | "experiences" | "about";
 
@@ -22,6 +23,7 @@ export default function Page() {
       {activeSection === "hero" && <HeroSection />}
       {activeSection === "projects" && <ProjectSection />}
       {activeSection === "experiences" && <ExperienceSection />}
+      {activeSection === "about" && <AboutSection />}
     </>
   );
 }

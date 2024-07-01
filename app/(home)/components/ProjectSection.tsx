@@ -65,41 +65,41 @@ export default function ProjectSection() {
             'description': 'My personal website portofolio built using Next.js',
             'badges': ['Next.js', 'Tailwind', 'React', 'TypeScript'],
             'repository': 'https://github.com/luthfinovra/web-portofolio',
-            'img': 'web-portofolio.png',
+            'img': 'web-portofolio.webp',
         },
         'Cinelog': {
             'description': 'Web based film catalog and recomendation application inspired by letterboxd',
             'badges': ['Node.js', 'Bootstrap', 'MongoDB'],
             'repository': 'https://github.com/luthfinovra/cinelog',
-            'img': 'cinelog.png',
+            'img': 'cinelog.webp',
         },
         'Linkyi Shop': {
             'description': 'Web bio link and product catalog for Final Capstone Product Bangkit Academy 2024',
             'badges': ['TensorFlow', 'Pandas', 'Matplotlib'],
             'repository': 'https://github.com/Linkyi-shop',
-            'img': 'linkyi.png',
+            'img': 'linkyi.webp',
         },
         'Quiz Application': {
             'description': 'Desktop based quiz application where the systems can provide ability for teacher and student to organized a quiz',
             'badges': ['Java', 'MySQL'],
-            'repository': 'https://github.com/luthfinovra/quiz-app',
-            'img': 'quiz-app.png',
+            'repository': 'https://github.com/luthfinovra/tubes_pbo_kuisApp',
+            'img': 'quiz-app.webp',
         },
         'Contact App Web API': {
             'description': 'Web API with CRUD operation for contact application which serves both website and mobile application.',
             'badges': ['Node.js', 'MongoDB'],
-            'repository': 'https://github.com/luthfinovra/contact-app',
-            'img': 'contact-app.png',
+            'repository': 'https://github.com/luthfinovra/contact-app-web-api',
+            'img': 'contact-app.webp',
         },
-        'More Information': {
+        'More Projects': {
             'description': 'You can visit my Github to know more about my projects',
             'badges': ['GitHub'],
             'repository': 'https://github.com/luthfinovra',
-            'img': 'github.png',
+            'img': 'github.webp',
         },
     }
     return (
-        <div className='relative h-[100vh] z-10 flex flex-col text-left px-12 2xl:px-72 xl:px-56 lg:px-32 md:px-28 sm:px-8 py-16 sm:py-28 gap-2 my-2'>
+        <div className='relative h-[100vh] z-10 flex flex-col text-left px-12 2xl:px-72 xl:px-56 lg:px-32 md:px-28 sm:px-8 py-16 sm:py-28 gap-2 my-2 ml-0 sm:ml-16 md:ml-0'>
             <motion.div className='flex-1 flex flex-col items-start'
                 initial={{ y: 10, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}

@@ -22,8 +22,8 @@ export default function HeroSection() {
     ]
     return (
         <div
-            className="relative z-20 h-screen flex flex-col justify-center
-        px-12 2xl:px-72 xl:px-56 lg:px-32  md:px-28 sm:px-8 py-16 sm:py-28 gap-2"
+            className="relative h-[100vh] z-10  flex flex-col justify-center h-sm:justify-start
+        px-12 2xl:px-72 xl:px-56 lg:px-32  md:px-28 sm:px-8 py-16 sm:py-28  gap-2"
         >
             <motion.span
                 initial={{ y: 10, opacity: 0 }}
@@ -89,7 +89,7 @@ export default function HeroSection() {
                 }}
                 className="mt-12 px-1"
             >
-                <div className='flex items-center gap-5'>
+                <div className='flex items-center gap-5 h-sm:pb-16'>
                     {socials.map((social, index) => {
                         const Icon = social.Icon;
 

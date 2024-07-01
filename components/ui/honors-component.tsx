@@ -71,12 +71,11 @@ type HonorCardProps = {
 function HonorCard({ honor }: HonorCardProps) {
     return (
         <div
-            className={`flex flex-col items-start gap-4 cursor-default rounded-md py-3 transition-colors hover:bg-muted/50 bg-muted"
-                }`}
+            className={`flex flex-col items-start gap-4 cursor-default rounded-md py-3`}
         >
             <div className="flex items-center gap-4 px-4">
                 <div className="space-y-1">
-                    <h3 className="text-lg font-semibold text-slate-50">{honor.honors} - {honor.title}</h3>
+                    <h3 className="text-md lg:text-lg font-semibold text-slate-50">{honor.honors} - {honor.title}</h3>
                     <p className="text-sm text-muted-foreground text-gray-300">{honor.time} - {honor.issuer}</p>
                 </div>
             </div>

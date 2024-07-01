@@ -27,15 +27,15 @@ export default function CustomCard({ imageSrc, imageAlt, title, description, bad
                         className="rounded-t-lg"
                     />
                 </AspectRatio>
-                <div className="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute inset-0 bg-muted/50 bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     <span className="text-slate-50 text-lg font-semibold flex items-center gap-1">
                         <SiGithub className="inline-block" /> Visit Repository
                     </span>
                 </div>
             </div>
-            <div className="p-4 overflow-hidden z-10">
-                <CardHeader >
-                    <CardTitle className="text-slate-50">{title}</CardTitle>
+            <div className="md:px-4 z-10 flex flex-col">
+                <CardHeader>
+                    <CardTitle className="text-slate-50 text-md md:text-xl">{title}</CardTitle>
                     <CardDescription className="py-2">
                         {description}
                     </CardDescription>
@@ -51,13 +51,13 @@ export default function CustomCard({ imageSrc, imageAlt, title, description, bad
 
     return (
         link ? (
-            <Link href={link} passHref className="w-full max-w-sm cursor-pointer">
-                <Card className="group">
+            <Link href={link} target='_blank' passHref className="max-w-sm cursor-pointer flex flex-col h-full">
+                <Card className="group flex flex-col h-full bg-muted/50 z-1">
                     {cardContent}
                 </Card>
             </Link>
         ) : (
-            <Card className="group w-full max-w-sm">
+            <Card className="group max-w-sm flex flex-col h-full">
                 {cardContent}
             </Card>
         )

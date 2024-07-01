@@ -9,7 +9,7 @@ type NavbarProps = {
 
 export default function Navbar({ setActiveSection, activeSection }: NavbarProps) {
     return (
-        <nav className="absolute top-0 left-0 right-0 z-50 text-white">
+        <nav className="absolute top-0 left-0 right-0 z-50 text-white text-sm md:text-md lg:text-lg">
             <div className="px-12 2xl:px-72 xl:px-56 lg:px-32">
                 <div className="flex items-center justify-between h-16">
                     {/* <span className="text-2xl dark:text-white font-semibold">nvr_luthfi</span> */}

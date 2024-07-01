@@ -43,7 +43,7 @@ export const AuroraBackground = ({
             absolute -inset-[10px] opacity-75 will-change-transform`,
 
                             showRadialGradient &&
-                            `[mask-image:radial-gradient(ellipse_at_100%_0%,black_10%,var(--transparent)_60%)]`
+                            `[mask-image:radial-gradient(ellipse_at_100%_0%,black_10%,var(--transparent)_75%)]`
                         )}
                     ></div>
                 </div>
