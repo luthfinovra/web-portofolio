@@ -91,6 +91,7 @@ const config = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         aurora: "aurora 60s linear infinite",
+        "aurora-off": "aurora 0s linear infinite" //turn off animation for certain mobile devices
       },
     },
   },

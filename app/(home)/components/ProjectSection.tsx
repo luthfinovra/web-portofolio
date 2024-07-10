@@ -74,7 +74,7 @@ export default function ProjectSection() {
             'img': 'cinelog.webp',
         },
         'Linkyi Shop': {
-            'description': 'Web bio link and product catalog for Final Capstone Product Bangkit Academy 2024',
+            'description': 'Web bio link and product catalog for Bangkit Academy 2024 Capstone Project, awarded Top 50 Product Capstone.',
             'badges': ['TensorFlow', 'Pandas', 'Matplotlib'],
             'repository': 'https://github.com/Linkyi-shop',
             'img': 'linkyi.webp',

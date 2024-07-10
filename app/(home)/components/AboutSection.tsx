@@ -40,7 +40,7 @@ export default function AboutSection() {
                     </div>
                 </div>
             </motion.div>
-            <footer className='text-gray-300 text-center py-8'>Copyright © 2024 - Luthfi Novra</footer>
+            <footer className='text-gray-300 text-center py-4 pt-8 sm:pt-16 text-sm gradient-text'>Copyright © 2024 - Luthfi Novra</footer>
         </div>
     )
 }

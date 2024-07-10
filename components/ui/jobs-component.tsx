@@ -45,7 +45,7 @@ const jobs: Job[] = [
     companyName: "Informatics Laboratory Telkom University",
     logo: "/logos/iflablogo.svg",
     jobTime: "Feb 2024 - Jun 2024",
-    jobTitle: "Computer Network Practicum Assitant",
+    jobTitle: "Computer Network Practicum Assistant",
     jobDescription:
       "In my role as a Computer Network Practicum Assistant at the Informatics Laboratory, I tutored and organized grading for over 100 students, ensuring they grasped complex networking concepts. My responsibilities included preparing instructional materials and providing hands-on assistance during lab sessions. This experience improved my ability to convey technical knowledge effectively and manage large groups of students.",
     responsibilities: [],
