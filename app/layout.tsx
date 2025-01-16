@@ -9,7 +9,7 @@ import { IconContext } from "react-icons";
 import { FaFolder } from "react-icons/fa";
 
 export const metadata: Metadata = {
-  title: "Web Portofolio",
+  title: "Hello There 👋",
   description: "Personal Website Portofolio",
 };
 

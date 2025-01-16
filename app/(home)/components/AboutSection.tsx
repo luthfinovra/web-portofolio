@@ -26,7 +26,7 @@ export default function AboutSection() {
                     </div>
                     <div>
                         <p>
-                            <b className='text-slate-50'>UI Library:</b> The user interface components are built using <b className='text-slate-50'>Tailwind CSS</b> with <b className='text-slate-50'>shadcn/ui</b> and <b className='text-slate-50'> Acernity UI </b> component library.
+                            <b className='text-slate-50'>UI Library:</b> The user interface components are built using <b className='text-slate-50'>Tailwind CSS</b> with <b className='text-slate-50'>shadcn/ui</b> and <b className='text-slate-50'> Aceternity UI </b> component library.
                         </p>
                     </div>
                     <div>
@@ -40,7 +40,7 @@ export default function AboutSection() {
                     </div>
                 </div>
             </motion.div>
-            <footer className='text-gray-300 text-center py-4 pt-8 sm:pt-16 text-sm gradient-text'>Copyright © 2024 - Luthfi Novra</footer>
+            <footer className='text-gray-300 text-center py-4 pt-8 sm:pt-16 text-sm gradient-text'>Copyright © 2025</footer>
         </div>
     )
 }

@@ -20,13 +20,22 @@ const jobs: Job[] = [
     jobTime: "Sep 2021 - Present",
     jobTitle: "Bachelor Degree in Informatics",
     jobDescription:
-      "As an undergraduate student in the School of Informatics at Telkom University, I have developed a strong foundation in various programming languages and software development methodologies. My coursework has equipped me with skills in areas such as database design, web development, and machine learning.",
+    "As an undergraduate student in the School of Informatics at Telkom University, I have developed a strong foundation in various programming languages and software development methodologies. My coursework has equipped me with skills in areas such as database design, web development, and machine learning.",
+    responsibilities: [],
+  },
+  {
+    companyName: "HUMIC (Human Centric) Engineering Research Center",
+    logo: "/logos/humiclogo.png",
+    jobTime: "Sep 2024 - Dec 2024",
+    jobTitle: "Backend Developer",
+    jobDescription:
+      "As a backend developer for the disease database application, I designed and implemented a robust API architecture using Laravel to support dynamic disease database management. I developed features enabling customizable data schemas tailored to specific diseases, ensuring flexibility and adaptability for diverse research needs. My work included implementing user role management with secure access controls, CRUD operations with validation, and file handling capabilities such as uploads and downloads. Additionally, I ensured data integrity through rigorous validation and formatting, integrated logging systems for activity tracking, and optimized database interactions using PostgreSQL.",
     responsibilities: [],
   },
   {
     companyName: "Computing Laboratory Telkom University",
     logo: "/logos/computinglogo.svg",
-    jobTime: "Dec 2023 - Present",
+    jobTime: "Dec 2023 - Dec 2024",
     jobTitle: "Laboratory Assistant",
     jobDescription:
       "At the Computing Laboratory, I served as a Media Division Laboratory Assistant, where I designed and managed social media feeds to engage students and promote laboratory activities. Additionally, I organized and conducted tutoring sessions on data structures and algorithms for over 30 students, enhancing their understanding and performance in these critical areas. This role honed my communication and instructional skills.",
@@ -36,7 +45,7 @@ const jobs: Job[] = [
     companyName: "Bangkit Academy 2024",
     logo: "/logos/bangkitlogo.svg",
     jobTime: "Feb 2024 - Jun 2024",
-    jobTitle: "Machine Learning Cohort",
+    jobTitle: "Machine Learning Cohort - Distinction Graduate",
     jobDescription:
       "As a participant in the Bangkit Academy Machine Learning cohort, led by Google, Tokopedia, Gojek, and Traveloka, I collaborated with peers to design and implement an object detection model using TensorFlow for our capstone project. This program deepened my understanding of machine learning algorithms and practical implementation techniques. It also enhanced my teamwork and project management skills within a high-performance environment.",
     responsibilities: [],
@@ -118,7 +127,7 @@ function JobDetails({ job }: JobDetailsProps) {
   return (
     <div className="grid gap-4 px-4">
       <h3 className="text-md lg:text-lg font-bold">{job.jobTitle}</h3>
-      <div className="text-muted-foreground text-gray-300 text-md lg:text-lg">
+      <div className="text-muted-foreground text-gray-100 text-md lg:text-lg">
         <p>{job.jobDescription}</p>
         {job.responsibilities.length > 0 && (
           <ul>

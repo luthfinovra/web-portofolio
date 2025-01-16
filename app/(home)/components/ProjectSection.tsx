@@ -31,11 +31,11 @@ export default function ProjectSection() {
             'javaScript',
             'c++',
             'java',
-            'go',
-            'typeScript'
+            'PHP'
         ],
         'Web Development': [
             'node.js',
+            'laravel',
             'next.js',
             'react',
             'tailwind',
@@ -56,11 +56,18 @@ export default function ProjectSection() {
         'Other': [
             'postman',
             'figma',
-            'azure',
+            'docker',
+            'azure'
         ]
     }
 
     const projects = {
+        'Healthcare': {
+            'description': 'A web-based application enabling dynamic disease database management with customizable schemas, user roles, and data access for users.',
+            'badges': ['Laravel', 'PostgreSQL'],
+            'repository': 'https://github.com/luthfinovra/dashboard-heart-disease-api',
+            'img': 'healthcare.webp',
+        },
         'Web Portofolio': {
             'description': 'My personal website portofolio built using Next.js',
             'badges': ['Next.js', 'Tailwind', 'React', 'TypeScript'],
