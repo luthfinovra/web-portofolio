@@ -31,7 +31,7 @@ export default function ProjectSection() {
             'javaScript',
             'c++',
             'java',
-            'PHP'
+            'php',
         ],
         'Web Development': [
             'node.js',
